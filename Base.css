@@ -1,0 +1,25 @@
+p{
+    margin: 0;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    height: 18.400px;
+}
+
+.navDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropDiv{
+    display: none;
+}
+
+.navDiv:hover>.dropDiv{
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+}

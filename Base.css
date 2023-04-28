@@ -9,6 +9,13 @@ p{
 }
 
 .navDiv{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navLink{
     display: flex;
     align-items: center;
     flex-direction: column;

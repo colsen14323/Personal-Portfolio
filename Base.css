@@ -1,4 +1,25 @@
+body{
+    /* background-color: #151712; */
+    background: rgb(19,103,75);
+    background: linear-gradient(180deg, rgba(19,103,75,1) 5%, rgba(21,23,18,1) 46%, rgba(21,23,18,1) 67%, rgba(17,5,84,1) 93%);
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: 10000px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 p{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
     margin: 0;
 }
 
@@ -29,4 +50,19 @@ p{
     display:inline-block;
     position: relative;
     z-index: 1;
+}
+
+.headtitle{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameAndTitle{
+    width: 300px;
+    border-bottom: 3px solid #E60C40;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

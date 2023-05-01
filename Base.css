@@ -1,3 +1,8 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
 body{
     /* background-color: #151712; */
     background: rgb(19,103,75);
@@ -8,11 +13,17 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin: 0;
 }
 
 p{
     margin: 0;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 h1,
@@ -23,23 +34,51 @@ h5{
     margin: 0;
 }
 
+
+header{
+    margin-bottom: 125px;
+}
+
+footer{
+    margin-top: 100px;
+    height: 120px;
+    padding: 15px;
+    background-color: rgba(56, 56, 56,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
 .navBar{
     display: flex;
     justify-content: space-around;
-    height: 18.400px;
+    align-items: flex-start;
+    background-color: rgba(56, 56, 56,0.7);
+    height: 37.600px;
+}
+
+.dropDiv{
+    background-color: rgba(56, 56, 56,0.7);
+    width: 100%;
 }
 
 .navDiv{
     width: 20%;
+    margin-top: 8px;
+   
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .navLink{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+    margin-bottom: 8px;
+    width: 100%;
 }
 
 .dropDiv{
@@ -59,9 +98,64 @@ h5{
     flex-direction: column;
 }
 
+main{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
 .nameAndTitle{
     width: 300px;
     border-bottom: 3px solid #E60C40;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pageLink{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.midParagraph{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.midParagraphResume{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.midParagraphP{
+    width: 60%;
+}
+
+.pageLink{
+    width: fit-content;
+}
+
+.pageName{
+    font-size: 45px;
+}
+
+.dividerLine{
+    width: 120%;
+    height: 1.5px;
+    background-color: #E60C40;
+}
+
+.pageDiscriptor{
+    font-size: 19px;
+}
+
+.mainPhoto{
+    width: 70%;
+}
+
+.carouselPannel{
     display: flex;
     align-items: center;
     flex-direction: column;

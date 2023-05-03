@@ -5,8 +5,9 @@
 
 body{
     /* background-color: #151712; */
-    background: rgb(19,103,75);
-    background: linear-gradient(180deg, rgba(19,103,75,1) 5%, rgba(21,23,18,1) 46%, rgba(21,23,18,1) 67%, rgba(17,5,84,1) 93%);
+    background: rgb(7,71,50);
+    background-color: rgba(7,71,50,1);
+    background: linear-gradient(180deg, rgba(7,71,50,1) 5%, rgba(21,23,18,1) 46%, rgba(21,23,18,1) 67%, rgba(17,5,84,1) 93%);
     color: whitesmoke;
     background-repeat: no-repeat;
     background-size:100% max(3000px, 100%);
@@ -15,6 +16,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
+    overflow-x: hidden;
 }
 
 p{
@@ -33,7 +35,6 @@ h4,
 h5{
     margin: 0;
 }
-
 
 header{
     margin-bottom: 125px;
@@ -65,8 +66,6 @@ footer{
 
 .navDiv{
     width: 20%;
-    margin-top: 8px;
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,12 +76,24 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column; 
-    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 100%;
+    /* transition: all 0.01s; */
 }
 
 .dropDiv{
     display: none;
+}
+
+.navLink:hover{
+    box-sizing: content-box;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin: -4px;
+    width: calc(100% + 8px);
+    font-size: 30px;
+    background-color: #363B39;
 }
 
 .navDiv:hover>.dropDiv{
@@ -159,13 +170,57 @@ main{
 }
 
 .mainPhoto{
-    width: 70%;
+    width: 100%;
+    /* clip-path: inset(10px 20px 30px 40px); */
+    /* -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%); */
+}
+
+.carouselBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselArrow{
+    width: 60px;
+    background-color: whitesmoke;
+    height: 60px;
+    border-radius: 300px;
+    margin: 50px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.carouselArrow:hover{
+    width: 70px;
+    height: 70px;
+    margin: 45px;
+}
+
+.carousel{
+    width: 100%;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 98%);
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin: 0 -15vw;
+    z-index: -1;
+    position: relative;
+    flex:none;
 }
 
 .carouselPannel{
+    width: 70%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex:none;
+}
+.carouselPannel:first-child{
+    margin-left: -55vw;
+}
+
+.smoothining{
+    transition: all 0.5s ease;
 }
 
 .sectionHeader{

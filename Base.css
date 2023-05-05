@@ -94,7 +94,9 @@ footer{
     margin: -4px;
     width: calc(100% + 8px);
     /* font-size: 30px; */
-    background-color: #363B39;
+    background-color: #242424;
+    position: relative;
+    z-index: 2;
 }
 
 .navDiv:hover>.dropDiv{
@@ -128,6 +130,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 .midParagraph{
     display: flex;
@@ -158,6 +161,13 @@ main{
     margin-bottom: 100px;
 }
 
+.midParagraphPast{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
 .midParagraphP{
     width: 60%;
 }
@@ -175,6 +185,12 @@ main{
     font-size: 45px;
 }
 
+em{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
 .dividerLine{
     width: 120%;
     height: 1.5px;
@@ -188,6 +204,7 @@ main{
 .mainPhoto{
     width: 100%;
     height: 55vh;
+    max-height: 75vw;
     object-fit: cover;
     object-position: center;
     /* clip-path: inset(10px 20px 30px 40px); */
@@ -200,7 +217,7 @@ main{
 
 .carouselBox{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -209,14 +226,15 @@ main{
     background-color: whitesmoke;
     height: 60px;
     border-radius: 300px;
-    margin: 50px;
+    /* margin: 50px; */
     padding: 10px;
     transition: all 0.5s;
 }
+
 .carouselArrow:hover{
     width: 70px;
     height: 70px;
-    margin: 45px;
+    /* margin: 45px; */
 }
 
 .carousel{
@@ -272,4 +290,33 @@ main{
     justify-content: space-around;
     width: 75%;
     align-items: center;
+}
+
+.seeWork{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    font-size: 20px;
+}
+
+.resDownload{
+    text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+    .midParagraphP{
+        width: 90%;
+    }
+
+    .midParagraphResume{
+        width: 95%;
+    }
+
+    .midParagraphPast{
+        width: 90%;
+    }
+
+    .carouselArrow:hover{
+        width: 60px;
+        height: 60px;
+    }
 }
